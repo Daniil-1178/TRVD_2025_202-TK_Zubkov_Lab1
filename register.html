@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69Fwj99WJXjBQDCclk1og9MAoF_NFTWiDww&s.jpg" alt="Логотип Сервісу нотаток">
+                        <h1>Сервіс для нотаток</h1>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+                    <ul class="nav-list">
+                        <li><a href="index.html#about">Про сайт</a></li>
+                        <li><a href="index.html#advantages">Переваги проєкту</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-login">Увійти</a>
+                    <a href="register.html" class="btn btn-register">Зареєструватися</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container section-padding">
+        <section class="auth-box">
+            <h2>Створення облікового запису</h2>
+            
+            <form action="/handle-registration" method="POST" class="auth-form">
+                
+                <div class="form-group">
+                    <label for="reg_name">Ваше ім'я</label>
+                    <input type="text" id="reg_name" name="name" placeholder="Ім'я" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg_email">Електронна пошта</label>
+                    <input type="email" id="reg_email" name="email" placeholder="Ваш email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reg_password">Пароль</label>
+                    <input type="password" id="reg_password" name="password" placeholder="Пароль (мінімум 6 символів)" required minlength="6">
+                </div>
+                
+                <button type="submit" class="auth-button">Зареєструватися</button>
+                
+                <p class="auth-link">
+                    Вже зареєстровані? <a href="login.html">Увійти</a>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Сервіс для нотатків. Усі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
