@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервіс для нотаток - Головна</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69Fwj99WJXjBQDCclk1og9MAoF_NFTWiDww&s.jpg" alt="Логотип Сервісу нотаток">
+                        <h1>Сервіс для нотаток</h1>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+                    <ul class="nav-list">
+                        <li><a href="#about">Про сайт</a></li>
+                        <li><a href="#advantages">Переваги проєкту</a></li>
+                        <li><a href="create.html">Створити нотатку</a></li>
+                        <li><a href="list.html">Список нотаток</a></li>
+                    </ul>
+                </nav>
+                 
+                <div class="auth-buttons">
+                <a href="login.html" class="btn btn-login">Увійти</a>
+                
+                <a href="register.html" class="btn btn-register">Зареєструватися</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about-section container section-padding">
+            <h2>Проєкт "Сервіс для нотаток"</h2>
+            <p>Метою нашого порталу є створити надійний, гнучкий та легкодоступний цифровий простір для користувача, допомагаючи йому запам'ятовувати, організовувати та використовувати будь-яку важливу інформацію.</p>
+            <p>Тут користувач матиме можливість ознайомитися з інтерфейсом проєкту, створювати та контролювати свої нотатки для зберігання інформації, структуризації своєї роботи чи просто розкладу дня.</p>
+            <p>Наша місія - сприяти централізованому зберіганню інфрмації, доступності та підвищенню продуктиновсті в загальному.</p>
+        </section>
+
+        <section id="advantages" class="gallery-section container section-padding">
+            <h2>Переваги проєкту</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://glavcom.ua/img/article/9309/37_main-v1685439676.jpg" alt="Галерея 1">
+                    <div class="overlay">Доступність</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://img.telemart.ua/img/news/2439-mini.jpg" alt="Галерея 2">
+                    <div class="overlay">Синхронізація</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://st.depositphotos.com/1160465/1263/i/450/depositphotos_12633181-stock-photo-blank-in-magnifying-glass-screen.jpg" alt="Галерея 3">
+                    <div class="overlay">Швидкий пошук</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://foxminded.ua/wp-content/uploads/2023/11/struktura-dannyh-eto.jpg" alt="Галерея 4">
+                    <div class="overlay">Організація даних</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://znayshov.com/FR/5454/1.jpg" alt="Галерея 5">
+                    <div class="overlay">Мультимедійність</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.as-computer.de/wissen/wp-content/uploads/2020/08/as-computer-blog-word-dokument-freigeben.jpg" alt="Галерея 6">
+                    <div class="overlay">Спільна робота</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.revealinginformation.com.ua/wp-content/uploads/2021/07/keylock.jpg" alt="Галерея 7">
+                    <div class="overlay">Безпека</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://img.freepik.com/premium-vector/blog-management-icon-3d-illustration-from-digital-marketing-collection-creative-blog-management-3d-icon-web-design-templates-infographics-more_676904-794.jpg" alt="Галерея 8">
+                    <div class="overlay">Продуктивність</div>
+                </div>
+            </div>
+            </section>
+
+        <section id="register now" class="contacts-section container section-padding">
+            <h2>Почніть працювати вже сьогодні</h2>
+            <div class="contact-info">
+                <div class="registration-form-container">
+                     <form class="registration-form" action="/submit-registration" method="POST">
+                       <label for="email_input">Електронна пошта:</label>        
+                       
+                       <input type="email" id="email_input" name="user_email" 
+                       placeholder="Введіть вашу електронну пошту" 
+                       required>
+
+                       <button type="submit">Зареєструватися</button>
+                     </form>
+                </div>             
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Про нас</h3>
+                    <p>Інформаційний портал "Сервіс для нотаток" надає можливіть спрощення зберігання інформації та структрування свого розкладу.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Швидкі посилання</h3>
+                    <ul>
+                        <li><a href="#about">Про сайт</a></li>
+                        <li><a href="#advantages">Переваги проєкту</a></li>
+                        <li><a href="#create">Створити нотатку</a></li>
+                        <li><a href="#list">Список нотаток</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Вакансії</h3>
+                    <p>Дізнавайтесь про вільні вакансії для роботи в нашому проєкті.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Сервіс для нотатків. Усі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+  </html>
